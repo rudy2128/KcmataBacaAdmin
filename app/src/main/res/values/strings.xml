@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">KacamataBaca</string>
+    <string name="news">NEWS</string>
+    <string name="catalogue">CATALOGUE</string>
+    <string name="img_pro">img pro</string>
+    <string name="proId">proId</string>
+    <string name="title">title</string>
+    <string name="choose_file">Choose file</string>
+    <string name="content">Content</string>
+    <string name="upload">Upload</string>
+    <string name="input_product">Product input</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="price">price</string>
+    <string name="home">Home</string>
+    <string name="testimony">Testimony</string>
+    <string name="cart">Keranjang</string>
+    <string name="description">Description</string>
+    <string name="update">Update</string>
+    <string name="empty">empty</string>
+    <string name="delete_product">Delete product</string>
+    <string name="message_delete">are you sure to delete?</string>
+    <string name="delete">delete</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="input_news">Input News</string>
+    <string name="input_testimony">Input Testimony</string>
+    <string name="testId">testId</string>
+    <string name="order">ORDER</string>
+    <string name="store_name">TOKO KACAMATA</string>
+    <string name="city">GOMBONG</string>
+    <string name="name">name</string>
+    <string name="phone">phone</string>
+    <string name="date">date</string>
+    <string name="total">"Total "</string>
+    <string name="zero">0</string>
+    <string name="discount">Discount</string>
+    <string name="percent">%</string>
+    <string name="total_cash">Total cash</string>
+    <string name="changes">Changes</string>
+    <string name="note">note</string>
+    <string name="qty">qty</string>
+    <string name="subtotal">subtotal</string>
+    <string name="delete_cart">Delete cart</string>
+    <string name="address">Address</string>
+    <string name="welcome_space">ADMIN TOKO KACAMATA ONLINE</string>
+</resources>

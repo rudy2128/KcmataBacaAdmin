@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "159987032381",
+    "firebase_url": "https://marellashop-d6820.firebaseio.com",
+    "project_id": "marellashop-d6820",
+    "storage_bucket": "marellashop-d6820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159987032381:android:8112f91553357252b06554",
+        "android_client_info": {
+          "package_name": "com.kacamata.kacamataplusminus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159987032381-09g77o5151u0b9krtqvmsolm4dfss2lv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kacamata.kacamataplusminus",
+            "certificate_hash": "9fcc096bd2c5ae386481a0b5dd6b6e1412992d86"
+          }
+        },
+        {
+          "client_id": "159987032381-1kuupnm8j8qqcacis5h1eq2h5mah9d15.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcX6XnsTSzoU5Zg8EWw1u19x1bJaLvttE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159987032381-1kuupnm8j8qqcacis5h1eq2h5mah9d15.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

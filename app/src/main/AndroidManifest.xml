@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kacamata.kacamataplusminus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/kacamata_adm"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.main.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.cart.UpdateCartActivity" />
+        <activity android:name=".ui.testimony.InputTestActivity" />
+        <activity android:name=".ui.testimony.TestUpdateActivity" />
+        <activity android:name=".ui.main.UpdateMainActivity" />
+        <activity android:name=".ui.home.HomeUpdateActivity" />
+        <activity android:name=".ui.home.InputProductActivity" />
+        <activity android:name=".ui.main.SecondActivity" />
+        <activity android:name=".ui.main.InputMainActivity" />
+        <activity android:name=".ui.main.MainActivity"/>
+    </application>
+
+</manifest>

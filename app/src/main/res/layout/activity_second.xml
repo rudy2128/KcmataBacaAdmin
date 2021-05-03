@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.main.SecondActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:tabMode="fixed"
+        app:tabTextColor="#f8f8ff"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabTextAppearance="@style/MyCustom"
+        app:tabPaddingStart="-1dp"
+        app:tabPaddingEnd="-1dp"
+        android:id="@+id/tabs_id">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:icon="@drawable/ic_baseline_home_24"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_testimony"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/testimony"
+            android:icon="@drawable/ic_baseline_person"/>
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tab_cart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"
+            android:icon="@drawable/ic_baseline_cart"/>
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:paddingTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack"
+        tools:listitem="@layout/fragment_home"/>
+
+
+</LinearLayout>
