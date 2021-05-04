@@ -19,7 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/colorBlack"
             android:padding="4dp">
 
 
@@ -27,20 +26,16 @@
                 android:id="@+id/img_main"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
-                android:layout_marginStart="@dimen/horizontal_margin"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="@dimen/horizontal_margin"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal"
                 android:contentDescription="@string/img_pro"/>
 
             <TextView
                 android:id="@+id/tv_proId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="65dp"
+                android:layout_marginStart="@dimen/horizontal_margin"
                 android:layout_marginTop="-60dp"
-                android:layout_marginEnd="200dp"
                 android:layout_marginBottom="26dp"
                 android:text="@string/proId"
                 android:textColor="@color/colorRed" />
@@ -48,23 +43,27 @@
                 android:id="@+id/tv_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="@dimen/vertical_margin"
                 android:layout_marginStart="@dimen/horizontal_margin"
                 android:layout_marginEnd="@dimen/horizontal_margin"
                 android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
                 android:maxLines="5"
                 android:text="@string/title"
-                android:textColor="@color/colorWhite" />
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack" />
 
             <TextView
                 android:id="@+id/tv_description"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vertical_margin"
                 android:layout_marginStart="@dimen/horizontal_margin"
                 android:layout_marginEnd="@dimen/horizontal_margin"
                 android:layout_marginBottom="10dp"
                 android:text="@string/description"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorBlack" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

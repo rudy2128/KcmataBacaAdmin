@@ -1,12 +1,5 @@
 package com.kacamata.kacamataplusminus.ui.cart;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -18,6 +11,13 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
@@ -27,7 +27,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.kacamata.kacamataplusminus.R;
-import com.kacamata.kacamataplusminus.entity.Cart;
 import com.kacamata.kacamataplusminus.entity.Order;
 import com.kacamata.kacamataplusminus.helper.RupiahHelper;
 
@@ -40,15 +39,15 @@ public class UpdateCartActivity extends AppCompatActivity {
     private FirebaseRecyclerAdapter<Order, OrderHolder> adapter;
     DatabaseReference reference;
     FirebaseAuth mAuth;
-    EditText edtDiscount,edtCash;
-    Button btnDiscount,btnChanges;
-    TextView tvPhone,tvName,tvAddress,tvPay,tvChanges;
-    String phone,name,address,discount,total;
+    EditText edtDiscount, edtCash;
+    Button btnDiscount, btnChanges;
+    TextView tvPhone, tvName, tvAddress, tvPay, tvChanges;
+    String phone, name, address, discount, total;
     double changes = 0;
     double total_value = 0;
     double percent = 100;
 
-    List<Order>orderList = new ArrayList<>();
+    List<Order> orderList = new ArrayList<>();
     private TextView tvTotal;
 
     @Override
@@ -56,6 +55,7 @@ public class UpdateCartActivity extends AppCompatActivity {
         super.onStart();
         adapter.startListening();
     }
+
     @Override
     public void onStop() {
         super.onStop();
@@ -90,12 +90,11 @@ public class UpdateCartActivity extends AppCompatActivity {
             discount = edtDiscount.getText().toString().trim();
             if (discount.isEmpty()) {
                 total_value = Double.parseDouble(total);
-                tvPay.setText(RupiahHelper.formatRupiah(total_value));
-            }else {
+            } else {
                 total_value = Double.parseDouble(total) - Double.parseDouble(total) * Double.parseDouble(discount) / percent;
-                tvPay.setText(RupiahHelper.formatRupiah(total_value));
 
             }
+            tvPay.setText(RupiahHelper.formatRupiah(total_value));
         });
 
         btnChanges.setOnClickListener(v -> {
@@ -131,7 +130,7 @@ public class UpdateCartActivity extends AppCompatActivity {
                 holder.tvNote.setText(model.getNote());
                 holder.tvPrice.setText(RupiahHelper.formatRupiah(Double.parseDouble(model.getPrice())));
                 holder.tvProId.setText(model.getProId());
-                holder.tvQty.setText("X " +model.getQuantity());
+                holder.tvQty.setText("X " + model.getQuantity());
                 holder.tvSubtotal.setText(RupiahHelper.formatRupiah(Double.parseDouble(model.getSubtotal())));
 
             }
@@ -139,7 +138,7 @@ public class UpdateCartActivity extends AppCompatActivity {
             @NonNull
             @Override
             public OrderHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_order,parent,false);
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_order, parent, false);
                 return new OrderHolder(view);
             }
         };
@@ -168,12 +167,12 @@ public class UpdateCartActivity extends AppCompatActivity {
         });
 
 
-
     }
 
     private static class OrderHolder extends RecyclerView.ViewHolder {
-        TextView tvTitle,tvPrice,tvQty,tvSubtotal,tvNote,tvDate,tvProId;
+        TextView tvTitle, tvPrice, tvQty, tvSubtotal, tvNote, tvDate, tvProId;
         CardView cvOrder;
+
         public OrderHolder(@NonNull View itemView) {
             super(itemView);
             tvDate = itemView.findViewById(R.id.tv_date);
@@ -187,6 +186,7 @@ public class UpdateCartActivity extends AppCompatActivity {
 
         }
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 

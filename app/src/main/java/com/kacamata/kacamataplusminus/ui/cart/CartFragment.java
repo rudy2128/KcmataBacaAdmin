@@ -66,8 +66,7 @@ public class CartFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView = view.findViewById(R.id.rv_cart);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-
+        recyclerView.setLayoutManager(new LinearLayoutManager(requireActivity()));
         recyclerView.setHasFixedSize(false);
 
         mAuth = FirebaseAuth.getInstance();

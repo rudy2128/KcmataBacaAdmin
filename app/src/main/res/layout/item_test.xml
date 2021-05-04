@@ -19,7 +19,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/colorBlack"
             android:padding="4dp">
 
 
@@ -27,21 +26,15 @@
                 android:id="@+id/img_test"
                 android:layout_width="400dp"
                 android:layout_height="400dp"
-                android:layout_marginStart="@dimen/horizontal_margin"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="@dimen/horizontal_margin"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
+                android:layout_gravity="center_horizontal"
                 android:contentDescription="@string/img_pro"/>
 
             <TextView
                 android:id="@+id/tv_testId"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="65dp"
-                android:layout_marginTop="-60dp"
-                android:layout_marginEnd="200dp"
-                android:layout_marginBottom="40dp"
+                android:layout_marginStart="@dimen/horizontal_margin"
                 android:text="@string/proId"
                 android:textColor="@color/colorRed" />
 
@@ -51,10 +44,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/horizontal_margin"
                 android:layout_marginEnd="@dimen/horizontal_margin"
+                android:layout_marginTop="@dimen/vertical_margin"
                 android:layout_marginBottom="10dp"
                 android:maxLines="5"
                 android:text="@string/description"
-                android:textColor="@color/colorWhite" />
+                android:textColor="@color/colorBlack" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
